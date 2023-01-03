@@ -10,13 +10,14 @@ public class App {
     public static String[][] printArray(String[][] kids){
         for(int i = 0; i < kids.length; i++){
             for(int j = 0; j < kids[0].length; j++){
+
                 
                 //Color Statements
 
-                if(kids[i][2].equals("NICE")){
+                if(kids[i][2].toUpperCase().equals("NICE")){
                     System.out.print(Colors.ANSI_GREEN);
                 }
-                else if(kids[i][2].equals("NAUGHTY")){
+                else if(kids[i][2].toUpperCase().equals("NAUGHTY")){
                     kids[i][4] = "COAL";
                     System.out.print(Colors.ANSI_RED);
                 }
@@ -100,7 +101,7 @@ public class App {
 
         //Prompt user
 
-        System.out.println(Colors.ANSI_CYAN + "Would you like to input a name? (yes/no)");
+        System.out.println(Colors.ANSI_CYAN + "Would you like to input a name? (yes/no)" + Colors.ANSI_RESET);
         String elfUser;
         elfUser = in.nextLine().toUpperCase();
 
