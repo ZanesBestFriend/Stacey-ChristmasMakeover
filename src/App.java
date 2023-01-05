@@ -77,14 +77,6 @@ public class App {
         {"", "", "", "", "",},
         {"", "", "", "", "",}
         };
-
-        //Make the kids uppercase
-        
-        for(int i = 0; i < kids.length; i++){
-            for(int j = 0; j < kids[0].length; j++){
-                kids[i][j].toUpperCase();
-            }
-        }
         
         //variable for adding more kids
 
@@ -140,7 +132,7 @@ public class App {
                         System.exit(0);
                     }
                     else if(newKids.length != 5){
-                        System.out.println(Colors.ANSI_RED + "You need 5 outputs!");
+                        System.out.println(Colors.ANSI_RED + "You need 5 inputs!");
                     }
                     else{
 
@@ -153,7 +145,7 @@ public class App {
                     //Check if there is space left
 
                     if(kids[19][0] != ""){
-                        System.out.println(Colors.ANSI_RED + "Too much! Too much" + Colors.ANSI_RESET);
+                        System.out.println(Colors.ANSI_RED + "This answer is not compatible with reality as I understand it..." + Colors.ANSI_RESET);
                         System.exit(0);
                     }
                     else{
@@ -186,3 +178,5 @@ public class App {
         in.close();
     }
 }
+
+//hello there
